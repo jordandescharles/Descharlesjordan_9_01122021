@@ -23,9 +23,7 @@ export default class NewBill {
     
     const positionPoint = fileName.lastIndexOf("."); // positionn du dernier point
       if (!fileName.slice(positionPoint + 1).match(/(png|jpg|jpeg)/g)) {
-        return alert(
-          "Veuillez insérer un justificatif au format .jpg, .jpeg ou .png "
-        );
+       alert("Veuillez insérer un justificatif au format .jpg, .jpeg ou .png ");
       } 
     const formData = new FormData()
     const email = JSON.parse(localStorage.getItem("user")).email
